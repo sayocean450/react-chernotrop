@@ -1,26 +1,49 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Index from './components/Index';
+import Article from './components/Article';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends React.Component {
+  
+  constructor(props) {
+      super(props);
+      this.state = {
+        article: [],
+      };
+    }
+    
+  componentDidMount() {
+      fetch('https://api.airtable.com/v0/appiP1kLZSXAZ3GZ3/Table%201?api_key=keygGeA7NPJaItczV')
+      .then((resp) => resp.json())
+      .then(data => {
+         this.setState({ article: data.records });
+      }).catch(err => {
+        // Error :(
+      });
+    }
+    
+    render() {
+      let data = this.state.article;
+      return (
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Index />
+            </Route>
+            <Route path="/article">
+              <Article data={data} />
+            </Route>
+          </Switch>
+        </Router>
+        );
+      }
+    }
 
 export default App;
