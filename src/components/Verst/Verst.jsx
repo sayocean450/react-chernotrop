@@ -6,7 +6,10 @@ class Verst extends Component {
   render() {
     return (
       <div className="Verst">
-        <VerstHeader />
+        <VerstHeader
+          num={this.props.num}
+          headline={this.props.headline}
+        />
         <div className='Verst__Content'>
           <div className='Verst__Col1'>{this.props.col1}</div>
           <div className='Verst__Col2'>{this.props.col2}</div>

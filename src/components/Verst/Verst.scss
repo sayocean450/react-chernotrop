@@ -2,7 +2,7 @@
 @import '../../styles/typo';
 
 .Verst {
-  @include col100(0, column);
+  @include col100(0 0 96px 0, column);
   
   &__Content {
     @include col100(0, row, stretch, stretch);
