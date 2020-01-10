@@ -1,0 +1,94 @@
+@import "grid";
+@import "colors";
+@import "typo";
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 24px 0;
+}
+
+.body_dark {
+  background-color: $darkGray;
+}
+
+.body_light {
+  background-color: $white;
+}
+
+.main {
+  @include col100(144px 72px 48px 72px, row, space-between);
+  
+  @include respond(mobile) {
+    @include col100(64px 32px 12px 32px, column);
+  }
+  
+  &__description {
+    @include col50(0, column);
+    line-height: 1.4;
+    color: $lightGray;
+    
+    &-row {
+      @include col100(0 0 48px 0, column);
+      
+      @include respond(mobile) {
+        @include col100(0 0 24px 0, column);
+        
+        h3 {
+          color: $coldBlue;
+        }
+      }
+    }
+    
+    p {
+      font-size: $fontSizeMedium;
+      font-family: $basicFont;
+      
+      @include respond(mobile) {
+        font-size: $fontSizeMain;
+      }
+    }
+    
+    @include respond(mobile) {
+      @include col100(0, column);
+      font-size: $fontSizeMain;
+    }
+    
+    p {
+      margin: 0 0 24px 0;
+    }
+  }
+  
+  &__menu {
+    @include col20(0, column);
+    align-items: flex-end;
+    font-family: $basicFont;
+    font-size: $fontSizeMedium;
+    
+    @include respond(mobile) {
+      display: none;
+    }
+    
+    &_mobile {
+      @include col100(64px 0 0 0, column);
+      align-items: center;
+    }
+    
+    &-item {
+      color: $coldBlue;
+      margin: 0 0 12px 0;
+      
+      @include respond(mobile) {
+        font-size: $fontSizeMedium;
+        margin: 0 0 32px 0;
+      }
+      
+      &_active {
+        color: $gray;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

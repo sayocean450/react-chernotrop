@@ -1,0 +1,13 @@
+@import "../../styles/grid";
+
+.Main {
+  @include col100(0, row, space-between);
+  
+  &__Left {
+    @include col50(0, column);
+  }
+  
+  &__Right {
+    @include col50(0, column, flex-start, flex-end);
+  }
+}

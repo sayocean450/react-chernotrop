@@ -1,0 +1,91 @@
+@import "colors";
+
+$fontSizeSmall: 14px;
+$fontSizeMain: 16px;
+$fontSizeMedium: 24px;
+$fontSizeLarge: 32px;
+$fontSizeBig: 56px;
+
+$accentFont: 'Arkhip', 'Georgia', serif;
+$basicFont: 'PT Root UI Regular', 'Roboto', 'Arial', sans-serif;
+
+p {
+  margin: 0 0 32px 0;
+  
+  @include respond(mobile) {
+    margin: 0 0 24px 0;
+  }
+}
+
+a {
+  color: $coldBlue;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $accentFont;
+  font-size: $fontSizeBig;
+  text-transform: uppercase;
+  margin: 0 0 64px 0;
+  
+  @include respond(mobile) {
+    font-size: $fontSizeMedium;
+    margin: 32px 0;
+  }
+}
+
+h2 {
+  font-family: $accentFont;
+  font-size: $fontSizeBig;
+  text-transform: uppercase;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  
+  @include respond(mobile) {
+    font-size: $fontSizeMedium;
+    margin: 0 0 8px 0;
+  }
+}
+
+h3 {
+  font-family: $accentFont;
+  font-size: $fontSizeMedium;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+  
+  @include respond(mobile) {
+    font-size: $fontSizeMain;
+    margin: 0 0 8px 0;
+    line-height: 1.8;
+  }
+}
+
+h5 {
+  font-size: $fontSizeMain;
+  margin: 0 0 8px 0;
+}
+
+@font-face {
+  font-family: 'Arkhip';
+  src: url('../fonts/arkhip/arkhip-regular.ttf') format('truetype'),
+  url('../fonts/arkhip/arkhip-regular.otf');
+}
+
+@font-face {
+  font-family: 'PT Root UI Regular';
+  src: url('../fonts/pt-root/pt-root-ui-regular/pt-root-ui-regular.eot');
+  src: url('../fonts/pt-root/pt-root-ui-regular/pt-root-ui-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/pt-root/pt-root-ui-regular/pt-root-ui-regular.woff2') format('woff2'),
+  url('../fonts/pt-root/pt-root-ui-regular/pt-root-ui-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Root UI Bold';
+  src: url('../fonts/pt-root/pt-root-ui-bold/pt-root-ui-bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/pt-root/pt-root-ui-bold/pt-root-ui-bold.woff2') format('woff2'),
+  url('../fonts/pt-root/pt-root-ui-bold/pt-root-ui-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

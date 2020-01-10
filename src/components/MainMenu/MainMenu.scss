@@ -1,0 +1,13 @@
+@import '../../styles/grid';
+@import '../../styles/typo';
+
+.MainMenu {
+  @include col50(0, column, flex-start, flex-end);
+  font-size: $fontSizeMedium;
+  font-family: $basicFont;
+  text-transform: lowercase;
+  
+  &__Item {
+    margin: 0 0 8px 0;
+  }
+}

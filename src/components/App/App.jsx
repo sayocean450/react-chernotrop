@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Index from './components/Index';
-import Article from './components/Article';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from 'react-router-dom';
+import './App.scss';
 
-class App extends React.Component {
-  
+import Main from '../Main/Main';
+import MainIndexText from '../MainIndexText/MainIndexText';
+import MainMenu from '../MainMenu/MainMenu';
+
+class App extends Component {
   constructor(props) {
       super(props);
       this.state = {
@@ -30,18 +30,18 @@ class App extends React.Component {
     }
     
     render() {
-      let data = this.state.article;
       return (
-        <Router>
-          <Switch>
-            <Route exact path="/">
-              <Index />
-            </Route>
-            <Route path="/article">
-              <Article data={data} />
-            </Route>
-          </Switch>
-        </Router>
+        <div className="App">
+          <Router>
+            <Main left={<MainIndexText/>} right={<MainMenu />}/>
+            <Switch>
+              <Route exact path="/">
+              </Route>
+              <Route path="/article">
+              </Route>
+            </Switch>
+          </Router>
+        </div>
         );
       }
     }

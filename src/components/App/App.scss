@@ -1,0 +1,7 @@
+@import "../../styles/main";
+
+.App {
+  @include col100(144px 72px 0 72px);
+  height: 100vh;
+  background-color: $darkGray;
+}
