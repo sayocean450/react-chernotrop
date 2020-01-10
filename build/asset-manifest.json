@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9e0c20d3.chunk.css",
+    "main.js": "/static/js/main.767b672b.chunk.js",
+    "main.js.map": "/static/js/main.767b672b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e40b13c4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e40b13c4.js.map",
+    "static/js/2.65714493.chunk.js": "/static/js/2.65714493.chunk.js",
+    "static/js/2.65714493.chunk.js.map": "/static/js/2.65714493.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e0c3729fb8d9ac79dfe34d0b07238101.js": "/precache-manifest.e0c3729fb8d9ac79dfe34d0b07238101.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9e0c20d3.chunk.css.map": "/static/css/main.9e0c20d3.chunk.css.map",
+    "static/js/2.65714493.chunk.js.LICENSE": "/static/js/2.65714493.chunk.js.LICENSE",
+    "static/media/main.scss": "/static/media/pt-root-ui-regular.f7552d29.eot",
+    "static/media/carrotsRotterdam.scss": "/static/media/carrots-rotterdam.0cc1580a.png",
+    "static/media/selfieAgainstSward.scss": "/static/media/section-pogodin.f3c93e64.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e40b13c4.js",
+    "static/js/2.65714493.chunk.js",
+    "static/css/main.9e0c20d3.chunk.css",
+    "static/js/main.767b672b.chunk.js"
+  ]
+}
