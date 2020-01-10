@@ -2,6 +2,6 @@
 
 .App {
   @include col100(144px 72px 0 72px, column);
-  miv-height: 100vh;
+  min-height: 100vh;
   background-color: $darkGray;
 }
