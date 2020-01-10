@@ -11,6 +11,7 @@ import Header from '../Header/Header';
 import Main from '../Main/Main';
 import MainIndexText from '../MainIndexText/MainIndexText';
 import MainMenu from '../MainMenu/MainMenu';
+import VerstList from '../VerstList/VerstList';
 
 class App extends Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class App extends Component {
           <Router>
             <Header />
             <Main left={<MainIndexText/>} right={<MainMenu />}/>
+            <VerstList/>
             <Switch>
               <Route exact path="/">
               </Route>

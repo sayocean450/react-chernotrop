@@ -1,0 +1,20 @@
+@import '../../styles/grid';
+@import '../../styles/typo';
+
+.SelfieAgainstSward {
+  background-image: url("../../img/section-pogodin.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 144px;
+  
+  &__Headline {
+  }
+  
+  &__Description {
+    @include col60(0, column);
+    font-family: $basicFont;
+    font-size: $fontSizeMedium;
+    color: $lightGray;
+    line-height: 1.4;
+  }
+}

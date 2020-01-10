@@ -1,0 +1,19 @@
+@import '../../styles/grid';
+@import '../../styles/typo';
+
+.CarrotsRotterdam {
+  background-image: url("../../img/carrots-rotterdam.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 144px;
+  
+  &__Headline {
+  }
+  
+  &__Description {
+    font-family: $basicFont;
+    font-size: $fontSizeMedium;
+    color: $lightGray;
+    line-height: 1.4;
+  }
+}

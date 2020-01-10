@@ -1,0 +1,38 @@
+@import '../../styles/grid';
+@import '../../styles/typo';
+
+.Verst {
+  @include col100(0, column);
+  
+  &__Content {
+    @include col100(0, row, stretch, stretch);
+  }
+  
+  &__Col {
+    &1 {
+      @include col35(0 5% 0 0, column);
+      border-right: 1px solid $gray;
+      
+      @include respond(mobile) {
+        @include col100(24px 0 0 0, column);
+      }
+    }
+    
+    &2 {
+      @include col35(0 5% 0 5%, column);
+      border-right: 1px solid $gray;
+      
+      @include respond(mobile) {
+        @include col100(0, column);
+      }
+    }
+    
+    &3 {
+      @include col30(0 0 0 5%, column);
+      
+      @include respond(mobile) {
+        @include col100(0, column);
+      }
+    }
+  }
+}

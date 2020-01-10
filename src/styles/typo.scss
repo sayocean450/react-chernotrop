@@ -52,6 +52,7 @@ h3 {
   font-size: $fontSizeMedium;
   text-transform: uppercase;
   margin: 0 0 16px 0;
+  line-height: 1.6;
   
   @include respond(mobile) {
     font-size: $fontSizeMain;

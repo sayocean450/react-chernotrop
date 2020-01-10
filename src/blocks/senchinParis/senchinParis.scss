@@ -1,0 +1,14 @@
+@import '../../styles/grid';
+@import '../../styles/typo';
+
+.SenchinParis {
+  &__Headline {
+  }
+  
+  &__Description {
+    font-family: $basicFont;
+    font-size: $fontSizeMedium;
+    color: $lightGray;
+    line-height: 1.4;
+  }
+}

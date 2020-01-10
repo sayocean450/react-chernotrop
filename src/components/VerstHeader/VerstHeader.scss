@@ -1,0 +1,28 @@
+@import '../../styles/grid';
+@import '../../styles/typo';
+
+.VerstHeader {
+  @include col100(0, column, center, center);
+  color: $lightGray;
+  
+  @include respond(mobile) {
+    @include col100(0, column);
+    align-items: flex-start;
+  }
+  
+  &__Colontitle {
+    @include col100(0 0 16px 0, row, center);
+    font-family: $basicFont;
+    font-size: $fontSizeMain;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+    @include respond(mobile) {
+      font-size: $fontSizeSmall;
+    }
+  }
+  
+  &__Headline {
+  
+  }
+}

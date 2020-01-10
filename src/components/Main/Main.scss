@@ -1,7 +1,7 @@
 @import "../../styles/grid";
 
 .Main {
-  @include col100(0, row, space-between);
+  @include col100(0 0 48px 0, row, space-between);
   
   &__Left {
     @include col50(0, column);
