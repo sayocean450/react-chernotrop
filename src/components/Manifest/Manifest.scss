@@ -1,0 +1,6 @@
+@import '../../styles/grid';
+@import '../../styles/typo';
+
+.Manifest {
+  @include col100(0, column);
+}

@@ -8,10 +8,8 @@ import {
 import './App.scss';
 
 import Header from '../Header/Header';
-import Main from '../Main/Main';
-import MainIndexText from '../MainIndexText/MainIndexText';
-import MainMenu from '../MainMenu/MainMenu';
-import VerstList from '../VerstList/VerstList';
+import Index from '../Index/Index';
+import Manifest from '../Manifest/Manifest';
 
 class App extends Component {
   constructor(props) {
@@ -36,12 +34,12 @@ class App extends Component {
         <div className="App">
           <Router>
             <Header />
-            <Main left={<MainIndexText/>} right={<MainMenu />}/>
-            <VerstList/>
             <Switch>
               <Route exact path="/">
+                <Index />
               </Route>
-              <Route path="/article">
+              <Route path="/manifest">
+                <Manifest />
               </Route>
             </Switch>
           </Router>

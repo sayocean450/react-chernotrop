@@ -1,0 +1,6 @@
+@import "../../styles/grid";
+@import "../../styles/typo";
+
+.Index {
+  @include col100(0, column);
+}
