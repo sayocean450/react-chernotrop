@@ -3,6 +3,7 @@
 
 .Header {
   @include col100(0, row, flex-start, center);
+  background-color: $darkGray;
   height: 72px;
   position: fixed;
   z-index: 2;
@@ -19,7 +20,8 @@
     align-items: center;
     margin: 8px 0 0 0;
     font-family: $accentFont;
-    font-size: $fontSizeLarge;
+    font-size: $fontSizeMedium;
+    text-transform: uppercase;
     
     @include respond(mobile) {
       @include col50(0);
