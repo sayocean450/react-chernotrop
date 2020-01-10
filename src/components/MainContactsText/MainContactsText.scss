@@ -1,0 +1,14 @@
+@import '../../styles/grid';
+@import '../../styles/typo';
+
+.MainContactsText {
+  @include col100(0, column);
+  font-family: $basicFont;
+  font-size: $fontSizeMedium;
+  color: $lightGray;
+  line-height: 1.4;
+  
+  &__Headline {
+    margin: 48px 0 16px 0;
+  }
+}

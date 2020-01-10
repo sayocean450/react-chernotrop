@@ -10,6 +10,7 @@ import './App.scss';
 import Header from '../Header/Header';
 import Index from '../Index/Index';
 import Manifest from '../Manifest/Manifest';
+import Contacts from '../Contacts/Contacts';
 
 class App extends Component {
   constructor(props) {
@@ -40,6 +41,9 @@ class App extends Component {
               </Route>
               <Route path="/manifest">
                 <Manifest />
+              </Route>
+              <Route path="/contacts">
+                <Contacts />
               </Route>
             </Switch>
           </Router>
