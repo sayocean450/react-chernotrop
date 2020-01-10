@@ -1,0 +1,48 @@
+@import "../../styles/grid";
+@import "../../styles/typo";
+
+.Header {
+  @include col100(0, row, flex-start, center);
+  height: 72px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  
+  @include respond(mobile) {
+    @include col100(0 24px 0 32px, row);
+    align-items: center;
+    height: 48px;
+  }
+  
+  &__Logo {
+    @include col20(0);
+    align-items: center;
+    margin: 8px 0 0 0;
+    font-family: $accentFont;
+    font-size: $fontSizeLarge;
+    
+    @include respond(mobile) {
+      @include col50(0);
+      align-items: center;
+    }
+    
+    &-Item {
+      color: $white;
+      font-weight: normal;
+    }
+  }
+  
+  &__Menu {
+    display: none;
+    
+    @include respond(tablet) {
+      display: none;
+    }
+    
+    @include respond(mobile) {
+      display: flex;
+      @include col50(0, column, center, flex-end);
+      align-items: flex-end;
+    }
+  }
+}

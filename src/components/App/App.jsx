@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import './App.scss';
 
+import Header from '../Header/Header';
 import Main from '../Main/Main';
 import MainIndexText from '../MainIndexText/MainIndexText';
 import MainMenu from '../MainMenu/MainMenu';
@@ -33,6 +34,7 @@ class App extends Component {
       return (
         <div className="App">
           <Router>
+            <Header />
             <Main left={<MainIndexText/>} right={<MainMenu />}/>
             <Switch>
               <Route exact path="/">
