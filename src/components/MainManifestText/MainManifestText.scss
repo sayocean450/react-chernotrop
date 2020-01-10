@@ -1,0 +1,10 @@
+@import '../../styles/grid';
+@import '../../styles/typo';
+
+.MainManifestText {
+  @include col100(0, column);
+  font-family: $basicFont;
+  font-size: $fontSizeMedium;
+  color: $lightGray;
+  line-height: 1.4;
+}
